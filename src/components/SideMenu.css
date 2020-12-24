@@ -1,0 +1,9 @@
+.side-menu {
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	width: 320px;
+	position: absolute;
+	left: 0;
+	background-color: #253053;
+}
