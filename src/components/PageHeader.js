@@ -22,6 +22,9 @@ const useStyles = makeStyles((theme) => ({
 			opacity: '0.7',
 		},
 	},
+	custom: {
+		fontFamily: 'Raleway',
+	},
 }))
 
 export default function PageHeader(props) {
@@ -32,10 +35,16 @@ export default function PageHeader(props) {
 			<div className={classes.pageHeader}>
 				<Card className={classes.pageIcon}>{icon}</Card>
 				<div className={classes.pageTitle}>
-					<Typography variant='h6' component='div'>
+					<Typography
+						className={classes.custom}
+						variant='h6'
+						component='div'>
 						{title}
 					</Typography>
-					<Typography variant='subtitle2' component='div'>
+					<Typography
+						className={classes.custom}
+						variant='subtitle2'
+						component='div'>
 						{subTitle}
 					</Typography>
 				</div>
